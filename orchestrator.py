@@ -1,8 +1,8 @@
 from typing import List, Dict, Any
-from .platform_api import get_existing_attributes, create_attribute_in_platform, notify_platform_completion
-from .ai_integration import query_ai_ollama
-from .xml_parser import parse_xml_fields, build_ai_prompt
-from .config import logger
+from platform_api import get_existing_attributes, create_attribute_in_platform, notify_platform_completion
+from ai_integration import query_ai_ollama
+from xml_parser import parse_xml_fields, build_ai_prompt
+from config import logger
 
 def query_ai(prompt: str, template_id: str) -> List[Dict[str, Any]]:
     return query_ai_ollama(prompt, template_id)

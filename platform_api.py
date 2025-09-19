@@ -3,7 +3,7 @@ import json
 import time
 import random
 from typing import List, Dict, Any
-from .config import PLATFORM_API_BASE_URL, PLATFORM_API_TOKEN, logger
+from config import PLATFORM_API_BASE_URL, PLATFORM_API_TOKEN, logger
 
 def get_platform_headers():
     """Generates headers for Platform API requests."""

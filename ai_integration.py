@@ -2,7 +2,7 @@ import requests
 import json
 import time
 from typing import List, Dict, Any
-from .config import OLLAMA_API_URL, OLLAMA_MODEL, logger
+from config import OLLAMA_API_URL, OLLAMA_MODEL, logger
 
 def query_ai_ollama(prompt: str, template_id: str) -> List[Dict[str, Any]]:
     """
