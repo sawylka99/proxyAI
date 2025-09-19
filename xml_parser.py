@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import json
 from typing import Dict, List, Any
-from .config import logger
+from config import logger
 
 def parse_xml_fields(xml_data: str) -> Dict[str, str]:
     """Parses the XML string and extracts field names and example values."""
